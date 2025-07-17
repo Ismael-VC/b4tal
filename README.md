@@ -1,5 +1,38 @@
 # b4 VM in Uxntal
 
+## Project Structure
+
+### Directories
+
+* `bin`: output folder.
+* `etc`:
+  - `drifloon.rom`: Uxntal assembler.
+  - `unutal.py`: Unutal preprocessor.
+  - `uxncli`: Uxn console emulator for Linux (x86_64) added for convenience, 
+              replace as needed if using a different architecture.
+
+### Files
+
+* `makefile` targets:
+  - `make`: Build `bin/b4.rom`.
+  - `test`: Test `bin/b4.rom`.
+  - `clean`: Delete `bin`.
+* `README.md`: Source and documentation in Unutal (Markdown with Uxntal). 
+
+```bash
+$ tree
+.
+├── bin
+│   └── b4.rom
+├── etc
+│   ├── drifloon.rom
+│   ├── unutal.py
+│   └── uxncli
+├── LICENSE
+├── makefile
+└── README.md
+```
+
 ## Macros
 
 ```uxntal
